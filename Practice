@@ -1,1 +1,61 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	// strings
+	var nameOne string = "apple"
+	var nameTwo = "mango"
+	var nameThree string
+
+	fmt.Println(nameOne, nameTwo, nameThree)
+
+	nameOne = "lichi"
+	nameThree = "watermelon"
+
+	fmt.Println(nameOne, nameThree)
+
+	nameFour := "orange"
+
+	fmt.Println(nameFour)
+
+	//ints
+	var ageOne int = 30
+	var ageTwo = 40
+	ageThree := 70
+
+	fmt.Println(ageOne, ageTwo, ageThree)
+
+	//bits & memory
+	var numOne int8 = 25 //ranges in between -128 through 127
+	var numTwo int8 = -128
+	var numThree uint16 = 256 //ranges in between 0 through 255
+
+	fmt.Println(numOne, numTwo, numThree)
+
+	//float
+	var scoreOne float32 = 25.98
+	var scoreTwo float64 = 82992299992727738838.02029992
+	scoreThree := -1.5
+
+	fmt.Println(scoreOne, scoreTwo, scoreThree)
+
+	// Printf (formatted strings)
+	age := 26
+	name := "opu"
+	fmt.Println("my name is", name, "my age is", age)
+	fmt.Printf("my name is %v and my age is %v  \n", name, age)
+
+	// Printf (formatted strings) %_ = format specifier
+	fmt.Printf("my name is %q and my age is %q  \n", name, age) //query
+
+	fmt.Printf("age is of type %T \n", age)            //var type
+	fmt.Printf("you scored %f points! \n", 225.99)     //float value
+	fmt.Printf("you scored %0.1f points! \n", 225.555) //controlling decimal values in float
+
+	// Sprintf (save formatted strings)
+	var str = fmt.Sprintf("my age is %v and my name is %v \n", age, name)
+	fmt.Println("My info is:", str)
+}
 
